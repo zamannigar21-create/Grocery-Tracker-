@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="GroceryTrack/GroceryTrack.vcxproj" Id="58bed9e9-7208-40ae-beaf-29bc98e6f598" />
+</Solution>
