@@ -1,81 +1,113 @@
-Grocery Tracker
-A C++ console application that analyzes grocery purchase data from an input file. The program counts how frequently each grocery item appears, allows users to search for individual items, displays all item frequencies, and generates a text-based histogram for easy visualization.
+# Grocery Tracker
 
-Features
-Reads grocery purchase data from an input text file.
-Stores item frequencies using a std::map.
-Performs case-insensitive searches for grocery items.
-Displays the purchase count for a selected item.
-Prints a complete list of all grocery items and their frequencies.
-Generates a histogram using asterisks (*) to visualize purchase frequency.
-Creates a backup frequency file for future reference.
-Technologies Used
-C++
-Object-Oriented Programming (OOP)
-Standard Template Library (STL)
-std::map
-File Input/Output
-Visual Studio 2022
-Skills Demonstrated
-Class design and encapsulation
-File handling
-Data structures (std::map)
-String manipulation
-Menu-driven program design
-Input validation
-Data processing algorithms
-How It Works
-Reads grocery items from a text file.
-Counts how many times each item appears.
-Stores the results in a map.
-Presents the user with a menu to:
-Search for an item’s frequency
-Display all item frequencies
-Display a histogram
-Exit the program
-Future Improvements
-Allow users to add and remove grocery items.
-Save updates back to the input file.
-Sort output by highest frequency.
-Export reports to CSV.
-Add a graphical user interface (GUI).Grocery Tracker
-A C++ console application that analyzes grocery purchase data from an input file. The program counts how frequently each grocery item appears, allows users to search for individual items, displays all item frequencies, and generates a text-based histogram for easy visualization.
+## Overview
 
-Features
-Reads grocery purchase data from an input text file.
-Stores item frequencies using a std::map.
-Performs case-insensitive searches for grocery items.
-Displays the purchase count for a selected item.
-Prints a complete list of all grocery items and their frequencies.
-Generates a histogram using asterisks (*) to visualize purchase frequency.
-Creates a backup frequency file for future reference.
-Technologies Used
-C++
-Object-Oriented Programming (OOP)
-Standard Template Library (STL)
-std::map
-File Input/Output
-Visual Studio 2022
-Skills Demonstrated
-Class design and encapsulation
-File handling
-Data structures (std::map)
-String manipulation
-Menu-driven program design
-Input validation
-Data processing algorithms
-How It Works
-Reads grocery items from a text file.
-Counts how many times each item appears.
-Stores the results in a map.
-Presents the user with a menu to:
-Search for an item’s frequency
-Display all item frequencies
-Display a histogram
-Exit the program
-Future Improvements
-Allow users to add and remove grocery items.
-Save updates back to the input file.
-Sort output by highest frequency.
-Export reports to CSV.
-Add a graphical user interface (GUI).
+The Grocery Tracker is a C++ console application that reads grocery item names from a text file, counts how many times each item appears, and stores the results using an STL map. The application provides an easy way to search for item frequencies, display all grocery items with their purchase counts, and create a backup data file for future use.
+
+---
+
+## Features
+
+- Reads grocery items from an input text file
+- Counts the frequency of each grocery item
+- Converts item names to lowercase for consistent counting
+- Stores frequency data using `std::map`
+- Searches for the frequency of a specific item
+- Displays all grocery items and their frequencies
+- Creates a backup frequency file (`frequency.dat`)
+- Uses object-oriented programming principles
+
+---
+
+## Technologies Used
+
+- C++
+- Standard Template Library (STL)
+- `std::map`
+- `fstream`
+- `string`
+- Object-Oriented Programming (OOP)
+
+---
+
+## Project Structure
+
+```
+.
+├── GroceryTracker.cpp
+├── CS210_Project_Three_Input_File.txt
+├── frequency.dat
+└── README.md
+```
+
+---
+
+## How It Works
+
+1. Opens the grocery input file.
+2. Reads each grocery item line by line.
+3. Converts each item to lowercase.
+4. Stores and updates item frequencies using an STL map.
+5. Allows users to:
+- Search for an item's frequency
+- Display all item frequencies
+- Generate a backup frequency file
+
+---
+
+## Example Input
+
+```
+Spinach
+Radishes
+Broccoli
+Peas
+Cranberries
+Broccoli
+Potatoes
+```
+
+---
+
+## Example Output
+
+```
+broccoli 2
+cranberries 1
+peas 1
+potatoes 1
+radishes 1
+spinach 1
+```
+
+---
+
+## Concepts Demonstrated
+
+- Object-Oriented Programming
+- Classes and Encapsulation
+- File Input and Output
+- STL Maps
+- String Manipulation
+- Data Processing
+- Error Handling
+
+---
+
+## Future Improvements
+
+- Display results sorted by frequency
+- Add graphical histogram output
+- Allow users to add or remove grocery items
+- Support multiple grocery lists
+- Improve input validation
+- Add automated testing
+
+---
+
+## Author
+
+**Nigar Babayeva**
+
+Developed as a C++ project demonstrating file processing, STL containers, and object-oriented programming techniques.
+
